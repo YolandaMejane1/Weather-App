@@ -74,9 +74,9 @@ function displayTemperature(response) {
   let isDayTime = response.data.time;
 
   if (isDayTime) {
-    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.day || "default-icon.png";
+    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.day;
   } else {
-    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.night || "default-icon.png";
+    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.night;
   }
 
   let weatherIconElement = document.querySelector("#weather-icon");

@@ -1,15 +1,15 @@
 const iconMappings = {
   "clear sky": {
-    day: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png",
-    night: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png",
+    day: "clear-sky-day.png",
+    night: "clear-sky-night.png",
   },
   "few clouds": {
-    day: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png",
-    night: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png",
+    day: "few-clouds-day.png",
+    night: "few-clouds-night.png",
   },
   "scattered clouds": {
-    day: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png",
-    night: "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png",
+    day: "scattered-clouds-day.png",
+    night: "scattered-clouds-night.png",
   },
   "broken clouds": {
     day: "broken-clouds-day.png",

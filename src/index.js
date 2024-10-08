@@ -80,7 +80,7 @@ function displayTemperature(response) {
   }
 
   let weatherIconElement = document.querySelector("#weather-icon");
-  let iconUrl = `src/assets/${iconFileName}`;
+  let iconUrl = `assets/${iconFileName}`;
   weatherIconElement.src = iconUrl;
   weatherIconElement.alt = weatherCondition;
 }

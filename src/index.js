@@ -73,11 +73,17 @@ function displayTemperature(response) {
   let iconFileName;
   let isDayTime = response.data.time;
 
-  if (isDayTime) {
-    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.day;
+  if (iconMappings[weatherCondition]) {
+    if (isDayTime) {
+      iconFileName = iconMappings[weatherCondition].day;
+    } else {
+      iconFileName = iconMappings[weatherCondition].night;
+    }
   } else {
-    iconFileName = iconMappings[weatherCondition.toLowerCase()]?.night;
+    // Fallback image if condition is not mapped
+    iconFileName = isDayTime ? "assets/clear-sky-day.png" : "assets/clear-sky-night.png";
   }
+  
 
   let weatherIconElement = document.querySelector("#weather-icon");
   let iconUrl = `assets/${iconFileName}`;
